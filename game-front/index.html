@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class = "topnav">
+      <div id="sideNav" class="navGame">
+        <a  href="javascript:void(0)" class="closebtn" onclick="closenav()">&times;</a>
+        <a  href="#">Menu</a>
+        <a  href="#">Login</a>
+        <a  href="#">Games</a>
+      </div>
+      <div class="mainNav">
+        <span onclick="abreNav()"><button class="sidebarbtn"><img class="sideImg" src="img/sidebar.png"> </button></span>
+        <a href="#">Game Collection</a>
+      </div>
+    </div>
+
+    <article id="games">
+        <button class="button_edit">EDIT</button>
+        <div class="container">
+            <div class="card">
+                <header class=jogo id="game">
+                    <div class="title">
+                        <p class="game_name" id="game_name">
+                            Far Cry 6
+                        </p>
+                        <p class="game_dev" id="game_dev">
+                            Ubisoft
+                        </p>
+                    </div>
+                   <div class="gameBox" id="game_img">
+                    <img class= "game_image" src="img/far2.jpg" alt="">
+                   </div>
+                </header>
+                <section class="review">
+                    <div class="notas">
+                        <div class="subnota">
+                            <p class="titleNota">Nota</p>
+                            <div class="nota">
+                                <h2 id="game_grade">
+                                    7.2
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="titleReview">REVIEW</h3>
+                    <div  id="style-1"> 
+                        <div class="resumo scrollbar">
+                            <p id="game_review">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quam earum laudantium porro at eaque! Id incidunt mollitia ut ipsam officia natus, eum ipsum non esse sed? Sapiente, minus debitis!
+                            </p>
+                        </div>
+                    </div>
+                </section>            
+            </div>
+        </div>
+    </article>
+        <div class="addGame">
+            ADICIONAR JOGO
+            <button id="addGame" onclick="addGame()"> + </button>
+        </div>
+    
+  </body>
+</html>
