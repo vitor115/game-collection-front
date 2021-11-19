@@ -83,8 +83,22 @@ p{
 }
 
 .edit_button{
-    background-color: #BD00EB; /* Green */
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    left: 100px;
+    background-color:#BD00EB;
+    border-radius: 50%;
     cursor: pointer;
+    text-decoration: none;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 30px;
+}
+
+.edit_button img{
+
+    width: 30px;
 }
 .jogo{
     display: flex;
@@ -123,8 +137,8 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 550px;
-    width: 75%;
+    height: 600px;
+    width: 90%;
 
 }
 .card{
@@ -281,6 +295,9 @@ body{
         margin-bottom: 5px;
     }
 
+    .container{
+        width: 70%;
+    }
     .gameBox{
         margin: 10px;
     }
@@ -302,7 +319,7 @@ body{
     }
 
     .game_name{
-        font-size: 50px;
+        font-size: 45px;
     }
     
     .game_dev{
@@ -310,6 +327,11 @@ body{
     }
     footer{
         margin-bottom: -62px;
+    }
+    .edit_button{
+        position:relative;
+        left: 20px;
+        bottom: 45px;
     }
 }
 
