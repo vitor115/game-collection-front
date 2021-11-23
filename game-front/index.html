@@ -3,21 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
+    <title>Game Collection</title>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <script src="js/script.js"></script>
   </head>
   <body>
     <div class = "topnav">
       <div id="sideNav" class="navGame">
-        <a  href="javascript:void(0)" class="closebtn" onclick="closenav()">&times;</a>
-        <a  href="#">Menu</a>
-        <a  href="#">Login</a>
-        <a  href="#">Games</a>
+        <a  href="./index.html" class="closebtn" onclick="closenav()">&times;</a>
+        <a  href="./index.html">Home</a>
+        <a  href="./new_game.html">Adicionar Jogo</a>
       </div>
       <div class="mainNav">
         <span onclick="abreNav()"><button class="sidebarbtn"><img class="sideImg" src="img/sidebar.png"> </button></span>
-        <a href="#">Game Collection</a>
+        <a href="index.html">Game Collection</a>
       </div>
     </div>
 
@@ -27,7 +26,7 @@
     </article>
         <div class="addGame">
             ADICIONAR JOGO
-            <button id="addGame" onclick="addGame()"> + </button>
+            <button id="addGame" onclick="newGame()"> + </button>
         </div>
     
   </body>

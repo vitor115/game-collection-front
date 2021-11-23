@@ -49,6 +49,15 @@
   margin-left: 50px;
 }
 
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+
 
 
 @media screen and (max-height: 450px){
@@ -79,7 +88,6 @@ p{
 .scrollbar
 {
 	overflow-y: auto;
-
 }
 
 .edit_button{
@@ -138,7 +146,7 @@ p{
     justify-content: center;
     align-items: center;
     height: 600px;
-    width: 90%;
+    width: 600px;
 
 }
 .card{
@@ -268,6 +276,13 @@ body{
     flex-direction: column; 
     color: azure;
 }
+.sendGame{
+    margin: 20px;
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: column; 
+    color: azure;
+}
 .addGame button{
     margin: 5px;
     background-color: #7AEB00; /* Green */
@@ -284,6 +299,37 @@ body{
     cursor: pointer;
 }
 
+.sendGame button{
+    margin: 5px;
+    background-color: #BD00EB; /* Green */
+    border-radius: 50%;
+    border: none;
+    color: white;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    align-self: center;
+    width: 30px;
+    cursor: pointer;
+}
+
+.newGame{
+    height: 25px;
+    margin: 10px;
+    width: 350px;
+    border: none
+}
+
+button image{
+    height: 5px;
+}
+textarea{
+    margin: 10px;
+    width: 350px;
+    border: none;
+}
 
 @media only screen and (min-width: 800px) {
     /*DESKTOP*/

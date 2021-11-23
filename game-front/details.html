@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Game Collection</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="js/details.js"></script>
+  </head>
+  <body>
+    <div class = "topnav">
+      <div id="sideNav" class="navGame">
+        <a  href="./index.html" class="closebtn" onclick="closenav()">&times;</a>
+        <a  href="./index.html">Home</a>
+        <a  href="./new_game.html">Adicionar Jogo</a>
+      </div>
+      <div class="mainNav">
+        <span onclick="abreNav()"><button class="sidebarbtn"><img class="sideImg" src="img/sidebar.png"> </button></span>
+        <a href="index.html">Game Collection</a>
+      </div>
+    </div>
+
+    <article id="games">
+    </article>
+    <div class="container">
+        <div class="card">
+            <header>
+                <h2 class="titleNota">Atualizar Informações do Jogo</h2>
+            </header>
+            <br>
+            URL da Imagem
+            <input class="newGame" size="50" type="text" name="img" placeholder="URL da Imagem">
+            Nome do Jogo
+            <input class="newGame" size="50" type="text" name="title" placeholder="Nome do Jogo">
+            Nome da Publicadora
+            <input class="newGame" size="50"type="text" name="publisher" placeholder="Nome da Publicadora">
+            Nota para o Jogo
+            <input class="newGame" size="50" type="number" name="grade" placeholder="Insira sua Nota para o Jogo">
+            Review do Jogo
+            <textarea name="review" id="" cols="30" rows="10" placeholder="Escreva o seu Review do Jogo"></textarea>
+            <div class="sendGame">
+                ENVIAR
+            <button id="sendGame" onclick="sendUpdate()"> &#10003; </button>
+        </div>
+        </div>
+    </div>
+    <div class="sendGame">
+        EXCLUIR JOGO?
+    <button id="sendGame" onclick="deleteGame()"> <img src="img/trash-solid.svg" alt=""> </button>
+        
+    
+  </body>
+</html>

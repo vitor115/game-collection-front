@@ -3,8 +3,6 @@ window.onload = function(){
   callAPI('http://localhost:3000/game', 'GET', function(status, response){
       if (status === 200){
           const games = response.response
-          var section = document.getElementById('games');
-          var str = "";
           console.log(response)
           console.log(games[0])
 
@@ -21,6 +19,14 @@ window.onload = function(){
   });
 }
 
+function editGame(index){
+  localStorage.setItem('index', index);
+  location.href = "./details.html";
+
+}
+function newGame(){
+  location.href = "./new_game.html";
+}
 
 function callAPI(url, method, callback, data){
   var xhr = new XMLHttpRequest();
@@ -50,7 +56,7 @@ function closenav(){
   document.getElementById("sideNav").style.width = "0px";
 }
   function addGame(){
-      document.getElementById("games").innerHTML += ' <div class="container"> <div class="card"> <header class=jogo id="game"> <button class="edit_button"><img src="img/edit.png" alt=""></button> <div class="title"> <p class="game_name" id="game_name'+j+'"> Far Cry 6 </p> <p class="game_dev" id="game_dev'+j+'"> Ubisoft </p> </div> <div class="gameBox" id="game_img'+j+'"> <img class= "game_image" src="img/far2.jpg" alt=""> </div> </header> <section class="review"> <div class="notas"> <div class="subnota"> <p class="titleNota">Nota</p> <div class="nota"> <h2 id="game_grade'+j+'"> 7.2 </h2> </div> </div> </div> <h3 class="titleReview">REVIEW</h3> <div id="style-1"> <div class="resumo scrollbar"> <p id="game_review'+j+'">  </p> </div> </div> </section> </div> </div>'
+      document.getElementById("games").innerHTML += ' <div class="container"> <div class="card"> <header class=jogo id="game"> <button class="edit_button" onclick="editGame('+j+')"><img src="img/edit.png" alt=""></button> <div class="title"> <p class="game_name" id="game_name'+j+'"> Far Cry 6 </p> <p class="game_dev" id="game_dev'+j+'"> Ubisoft </p> </div> <div class="gameBox" id="game_img'+j+'"> <img class= "game_image" src="img/far2.jpg" alt=""> </div> </header> <section class="review"> <div class="notas"> <div class="subnota"> <p class="titleNota">Nota</p> <div class="nota"> <h2 id="game_grade'+j+'"> 7.2 </h2> </div> </div> </div> <h3 class="titleReview">REVIEW</h3> <div id="style-1"> <div class="resumo scrollbar"> <p id="game_review'+j+'">  </p> </div> </div> </section> </div> </div>'
       j++
     }
 
