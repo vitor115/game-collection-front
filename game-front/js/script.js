@@ -3,8 +3,6 @@ window.onload = function(){
   callAPI('http://localhost:3000/game', 'GET', function(status, response){
       if (status === 200){
           const games = response.response
-          console.log(response)
-          console.log(games[0])
 
           for (var i=0; i<games.length; i++){
               addGame();

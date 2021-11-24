@@ -1,4 +1,4 @@
-formData= new FormData();
+
 function sendGame(){
     event.preventDefault();
     var img = document.getElementsByName("img")[0];
@@ -16,11 +16,6 @@ function sendGame(){
                 grade: grade.value,
                 review:review.value
             }
-            formData.append("img", img.value)
-            formData.append("title", title.value)
-            formData.append("publisher", publisher.value)
-            formData.append("grade", grade.value)
-            formData.append("review", review.value)
             console.log(newGame);
             callAPI("http://localhost:3000/game",'POST', function(status, response){
                 if(status === 201){

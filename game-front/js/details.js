@@ -9,7 +9,6 @@ window.onload = function(){
           console.log(response);
           console.log(localStorage.getItem('index'));
           console.log(games[localStorage.getItem(localStorage.getItem('index'))]);
-          document.getElementsByName('img')[0].placeholder=games[localStorage.getItem('index')].img;
           document.getElementsByName('img')[0].value=games[localStorage.getItem('index')].img;
           document.getElementsByName('title')[0].value=games[localStorage.getItem('index')].title;
           document.getElementsByName('publisher')[0].value=games[localStorage.getItem('index')].publisher;
