@@ -35,9 +35,9 @@ function sendUpdate(){
     newGame.grade = grade;
     newGame.review = review;
 
-    console.log(newGame)
-
-    callAPI("http://localhost:3000/game",'PATCH', function(status, response){
+    if(grade>=0 && grade<=10){
+        newGame.grade = grade;
+        callAPI("http://localhost:3000/game",'PATCH', function(status, response){
         if(status === 200){
             
             alert('Game atualizado com sucesso');
@@ -47,6 +47,12 @@ function sendUpdate(){
         }    
     
     }, newGame)
+    }
+    else{
+        alert("A nota deve estar entre 0 a 10!");
+    }
+
+    console.log(newGame); 
 }
 
 function editGame(index){
